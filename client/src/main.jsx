@@ -10,4 +10,4 @@ ReactDOM.createRoot(
     <Toaster />
     <App />
   </>
-);
+);  

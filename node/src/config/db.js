@@ -8,7 +8,7 @@ dns.setServers([
 ])
 
 const connectDb = async () => {
-    console.log("connecting to database", process.env.MONGO_URI);
+    console.log("connecting to database");
     try {
         const conn = await mongoose.connect(process.env.MONGO_URI);
         console.log("Connected to MongoDB");
