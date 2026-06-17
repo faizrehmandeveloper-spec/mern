@@ -4,16 +4,21 @@ import cors from "cors";
 import connectDb from "./src/config/db.js";
 import authRoutes from "./src/routes/authRoutes.js";
 
-  dotenv.config();
+dotenv.config();
 
-  const app = express();
+const app = express();
+const clientUrl =
+  process.env.CLIENT_URL ?? "http://localhost:5173";
 
-  connectDb();
+connectDb();
 
-
-  
-  app.use(express.json());
-  app.use(cors());
+app.use(express.json());
+app.use(
+  cors({
+    origin: clientUrl,
+    credentials: true,
+  })
+);
 
 app.use("/api/auth", authRoutes);
 

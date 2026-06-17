@@ -30,8 +30,11 @@ const Register = () => {
         await registerUser(formData);
 
       toast.success(response.message);
-
-      console.log(response);
+      setFormData({
+        name: "",
+        email: "",
+        password: "",
+      });
     } catch (error) {
       toast.error(
         error.response?.data?.message ||
@@ -51,21 +54,27 @@ const Register = () => {
           type="text"
           name="name"
           placeholder="Enter Name"
+          value={formData.name}
           onChange={handleChange}
+          required
         />
 
         <input
           type="email"
           name="email"
           placeholder="Enter Email"
+          value={formData.email}
           onChange={handleChange}
+          required
         />
 
         <input
           type="password"
           name="password"
           placeholder="Enter Password"
+          value={formData.password}
           onChange={handleChange}
+          required
         />
 
         <button disabled={loading}>

@@ -1,5 +1,6 @@
 import {
   BrowserRouter,
+  Navigate,
   Routes,
   Route,
 } from "react-router-dom";
@@ -10,6 +11,10 @@ const AppRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
+        <Route
+          path="/"
+          element={<Navigate to="/register" replace />}
+        />
         <Route
           path="/register"
           element={<Register />}
