@@ -4,15 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .bg-black{
+        background-color: #212121;
+        color: #fff;
+      }
+    </style>
   </head>
-  <body>
-    <p>before the script</p>
-    <script>
-      "use strict";
-
-      x = 10; // Error: x is not defined
-      console.log(x);
-    </script>
-    <p>...After the script.</p>
+  <body class="bg-black">
+    <div id="container">
+      <h1 id="title" class="heading">First <span style="display:none;">test text </span></h1>
+      <h2>Lorem ipsum dolor sit .</h2>
+      <h2>Lorem ipsum dolor sit .</h2>
+      <h2>Lorem ipsum dolor sit .</h2>
+      <h2>Lorem ipsum dolor sit .</h2>
+      <input type="password" id="input" />
+      <ul>
+        <li class="list-item">One</li>
+        <li class="list-item">Two</li>
+        <li class="list-item">Three</li>
+      </ul>
+    </div>
+    <!-- <script src="index.js"></script> -->
   </body>
 </html>
