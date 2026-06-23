@@ -59,7 +59,7 @@ const obj1 = {
 console.log(obj1); // { name: "John", age: 30, isStudent: true }
 
 let fruit = "apple";
-let bag = {
+let bag = { 
   [fruit + "Computers"]: 5, // bag.appleComputers = 5
 };
 console.log(bag.appleComputers); // 5
