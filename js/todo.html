@@ -1,11 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
+
 <body>
-    
+    <div class="container">
+        <h1>TODO LIST!</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Mobile</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Action</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th><input type="text" id="name"></th>
+                    <th><input type="text" id="email"></th>
+                    <th><input type="text" id="mobile"></th>
+                    <th><input type="text" id="address"></th>
+                    <th><input type="submit" id="name" class="btn  btn-outline-primary" onclick="AddInfo();"></th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>mark12@gmail.com</td>
+                    <td>7428059960</td>
+                    <td>Bhajanpura delhi nehru vihar 110094</td>
+                    <td>
+                        <span class="btn btn-outline-warning">Edit</span>
+                        <span class="btn btn-outline-danger">Delete</span>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+<script>
+    function AddInfo() {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const mobile = document.getElementById('mobile').value;
+        const address = document.getElementById('address').value;
+        const tr = document.createElement('tr');
+        const genrate_id = Math.round(Math.random() * 10 + 1);
+        tr.setAttribute("id", genrate_id)
+        const td_action = document.createElement('td');
+        const td_id = document.createElement('td');
+        const td_name = document.createElement('td');
+        const td_email = document.createElement('td');
+        const td_mobile = document.createElement('td');
+        const td_address = document.createElement('td');
+        td_email.appendChild(document.createTextNode(email));
+        td_mobile.appendChild(document.createTextNode(mobile));
+        td_address.appendChild(document.createTextNode(address));
+        td_name.appendChild(document.createTextNode(name));
+        td_name.setAttribute('id', genrate_id + 'name');
+        td_email.setAttribute('id', genrate_id + 'email');
+        td_mobile.setAttribute('id', genrate_id + 'mobile');
+        td_address.setAttribute('id', genrate_id + 'address');
+        td_id.appendChild(document.createTextNode(genrate_id));
+        td_id.setAttribute('id', genrate_id + 'id');
+
+        const td_actionicon = `
+                    <span class="btn btn-outline-warning" id="${genrate_id}edit" onclick=editrow(${genrate_id}) >Edit</span>
+                    <span class="btn btn-outline-danger" id="${genrate_id}delete" onclick=deleterow(${genrate_id})>Delete</span>
+                `;
+
+        td_action.innerHTML = td_actionicon;
+
+
+        tr.appendChild(td_id);
+        tr.appendChild(td_name);
+        tr.appendChild(td_email);
+        tr.appendChild(td_mobile);
+        tr.appendChild(td_address);
+        tr.appendChild(td_action);
+        document.querySelector(".table-group-divider").appendChild(tr);
+
+
+
+    }
+
+    function editrow(edit_id) {
+        const td_name = document.getElementById(edit_id + 'name');
+        console.log(td_name.innerText);
+    }
+    function deleterow(delete_id) {
+
+        //  const row = document.querySelector("tr").id("#"+delete_id);
+        //  const row = document.querySelector("#" + delete_id);
+        const row = document.getElementById(delete_id);
+
+
+        if (row) {
+            row.remove();
+            alert('Row Deleted Successfully !')
+        }
+
+    }
+</script>
+
 </html>
