@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: black; color:white;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<!-- <script>
+    function addlang(lngname) {
+        const li = document.createElement("li");
+        li.innerHTML = `${lngname}`
+        document.querySelector('.language').appendChild(li);
+
+    }
+    addlang('HTML');
+</script> -->
+<!-- <script>
+   const input = document.createElement('input');
+input.id = "addlang";
+const button = document.createElement('button');
+button.innerHTML = "click me";
+button.setAttribute("onclick","addlang();");
+document.body.appendChild(input);
+document.body.appendChild(button);
+function addlang(){
+ const getlang = document.getElementById('addlang').value;
+ const li = document.createElement("li");
+    li.innerHTML = `${getlang}`
+    document.querySelector('.language').appendChild(li);
+    input.value = "";
+    
+}
+</script> -->
+<!-- <script>
+    best approch
+    const input = document.createElement('input');
+    input.id = "addlang";
+    const button = document.createElement('button');
+    button.innerHTML = "click me";
+    button.setAttribute("onclick", "addlang();");
+    document.body.appendChild(input);
+    document.body.appendChild(button);
+    function addlang() {
+        const getlang = document.getElementById('addlang').value;
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(getlang));
+        document.querySelector('.language').appendChild(li);
+        input.value = "";
+
+    }
+</script> -->
+
+</html>
