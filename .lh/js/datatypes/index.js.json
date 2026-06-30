@@ -1,0 +1,46 @@
+{
+    "sourceFile": "js/datatypes/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1782811936022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1782811947221,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,9 @@\n+// data types 8\r\n+let number = 42; // number\r\n+let string = \"Hello, World!\"; // string\r\n+let boolean = true; // boolean\r\n+let nullValue = null; // null\r\n+let undefinedValue; // undefined\r\n+let symbolValue = Symbol(\"unique\"); // symbol\r\n+let bigIntValue = 9007199254740991n; // BigInt\r\n+let objectValue = { name: \"Alice\", age: 30 }; // object\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1782811960562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,6 @@\n let nullValue = null; // null\r\n let undefinedValue; // undefined\r\n let symbolValue = Symbol(\"unique\"); // symbol\r\n let bigIntValue = 9007199254740991n; // BigInt\r\n-let objectValue = { name: \"Alice\", age: 30 }; // object\n\\ No newline at end of file\n+let objectValue = { name: \"Alice\", age: 30 }; // object\r\n+    \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1782811969049,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,5 @@\n let undefinedValue; // undefined\r\n let symbolValue = Symbol(\"unique\"); // symbol\r\n let bigIntValue = 9007199254740991n; // BigInt\r\n let objectValue = { name: \"Alice\", age: 30 }; // object\r\n-    \n\\ No newline at end of file\n+    console.log(ob)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1782811995013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,5 @@\n let undefinedValue; // undefined\r\n let symbolValue = Symbol(\"unique\"); // symbol\r\n let bigIntValue = 9007199254740991n; // BigInt\r\n let objectValue = { name: \"Alice\", age: 30 }; // object\r\n-    console.log(ob)\n\\ No newline at end of file\n+    cos\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1782812010107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,5 @@\n let undefinedValue; // undefined\r\n let symbolValue = Symbol(\"unique\"); // symbol\r\n let bigIntValue = 9007199254740991n; // BigInt\r\n let objectValue = { name: \"Alice\", age: 30 }; // object\r\n-    cos\n\\ No newline at end of file\n+    \r\n"
+                },
+                {
+                    "date": 1782812021111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,5 +7,5 @@\n let symbolValue = Symbol(\"unique\"); // symbol\r\n let bigIntValue = 9007199254740991n; // BigInt\r\n let objectValue = { name: \"Alice\", age: 30 }; // object\r\n     \r\n-console.log()\n\\ No newline at end of file\n+console.log(s)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1782812069713,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+// data types 8\r\n+let number = 42; // number\r\n+let string = \"Hello, World!\"; // string\r\n+let boolean = true; // boolean\r\n+let nullValue = null; // null\r\n+let undefinedValue; // undefined\r\n+let symbolValue = Symbol(\"unique\"); // symbol\r\n+let bigIntValue = 9007199254740991n; // BigInt\r\n+let objectValue = { name: \"Alice\", age: 30 }; // object\r\n+\r\n+// string in built functions \r\n+string.length\r\n+console.log(string.length);\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1782811936022,
+            "name": "Commit-0",
+            "content": ""
+        }
+    ]
+}
