@@ -1,0 +1,18 @@
+{
+    "sourceFile": "js/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1782899454260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1782899454259,
+            "name": "Commit-0",
+            "content": "\"use strict\";\r\n\r\nvar x = 10;\r\n\r\n// data types 8\r\nlet number = 42; // number\r\nlet string = \"Hello, World!\"; // string\r\nlet boolean = true; // boolean\r\nlet nullValue = null; // null\r\nlet undefinedValue; // undefined\r\nlet symbolValue = Symbol(\"unique\"); // symbol\r\nlet bigIntValue = 9007199254740991n; // BigInt\r\nlet objectValue = { name: \"Alice\", age: 30 }; // object\r\n\r\nfunction getCurrentDate() {\r\n  return new Date().toDateString();\r\n}\r\n\r\nfunction getCurrentTime(text, date = getCurrentDate()) {\r\n  // console.log(text + \" \" + date);\r\n}\r\ngetCurrentTime(\"Current Date is:\", \"17-06-2026\");\r\ngetCurrentTime(\"Current Date is:\");\r\n\r\nlet createArray = new Array();\r\nlet arrayValue = [1, 2, 3, 4, 5]; // array\r\n\r\n// let arr = ['Apple',{name:'jhon'},true, function(){alert('hello');}];\r\n// arr[3]();\r\nlet fruits = [\"Apple\", \"Orange\", \"Plum\"];\r\n//console.log( fruits[fruits.length-1] ); // Plum\r\n\r\n// let fruits1 = [\"Apple\", \"Orange\", \"Plum\"];\r\n//console.log(fruits1.pop()); // remove last element (Plum) and alert it\r\n//console.log(fruits1.shift()); // remove first element (Apple) and alert it\r\n\r\n// console.log(fruits1.unshift(\"Grape\")); // add element to the beginning and alert the new length\r\n// console.log(fruits1); // remaining elements: Grape, Orange (at index 0)\r\n\r\n// for ( let fruit of fruits) {\r\n//     console.log(fruit);\r\n// }\r\n\r\n// for( let key in fruits) {\r\n//     console.log(key);\r\n// }\r\n\r\nconst obj = new Object();\r\nobj.name = \"John\";\r\nobj.age = 30;\r\nobj.isStudent = true;\r\nconsole.log(obj); // John\r\n\r\nconst obj1 = {\r\n  name: \"John\",\r\n  age: 30,\r\n  isStudent: true,\r\n};\r\nconsole.log(obj1); // { name: \"John\", age: 30, isStudent: true }\r\n\r\nlet fruit = \"apple\";\r\nlet bag = { \r\n  [fruit + \"Computers\"]: 5, // bag.appleComputers = 5\r\n};\r\nconsole.log(bag.appleComputers); // 5\r\n\r\n// DOM\r\ndocument.getElementById(\"title\");\r\ndocument.getElementById(\"title\").id;\r\ndocument.getElementById(\"title\").className;\r\ndocument.getElementById(\"title\").getAttribute(\"class\");\r\ndocument.getElementById(\"title\").getAttribute(\"id\");\r\ndocument.getElementById(\"title\").setAttribute(\"class\", \"fazlu rehman\");\r\ndocument.getElementById(\"title\").id;\r\nconst title = document.getElementById(\"title\");\r\ntitle.style.backgroundColor = \"green\";\r\ntitle.style.color = \"white\";\r\ntitle.style.padding = \"15px\";\r\ntitle.style.borderRadius = \"10px\";\r\ntitle.textContent;\r\ntitle.innerText;\r\ntitle.innerHTML;\r\ndocument.getElementsByClassName('heading')\r\ndocument.querySelector('#title')\r\ndocument.querySelector('h2')\r\ndocument.querySelector(\".heading\");\r\ndocument.querySelector('input[type=\"password\"]');\r\ndocument.querySelectorAll('li');\r\ntemplist.forEach(function (l){\r\n   l.style.backgroundColor = 'red' ;\r\n    l.style.color = \"white\";\r\n    \r\n});\r\nconst listItems = document.getElementsByClassName('list-item');\r\nconst myconvertedArr Array.from(listItems);\r\nmyconvertedArr.forEach( function (ll) {\r\n    ll.style.backgroundColor= \"yellow\";\r\n});\r\n// NODElist "
+        }
+    ]
+}
