@@ -52,3 +52,38 @@ let nes_obj_arr = [
 
 
 // in built function for arrays 
+
+// remove last element of array    c
+const pop_arr =  [1,2,3,4,5,6,7,8,9]; 
+pop_arr.pop();
+
+// add element to last in array 
+const push_arr = ['first','second'];
+push_arr.push('third');
+
+// remove first element of array 
+const shift_arr = [1,2,3,4,5,6,7,8];
+shift_arr.shift();
+
+// add first element in array 
+const unshift_arr = [2,3,4,5,6,7,8];
+unshift_arr.unshift(1);
+
+
+// splice function use for add insert delete or replace array values 
+
+const arr5 = ["HTML","CSS","React"];
+
+arr5.splice(2,0,"JavaScript");
+// const arr5 = ['apple','bnana','mango'];
+// Kahan se start karna hai? → startIndex
+// Kitne elements delete karne hain? → deleteCount
+// Kaun se naye elements insert karne hain? → newItems
+// arr5.splice(1,2,'papaya'); // Insert
+
+
+console.log(arr5);
+// console.log(arr5);
+// arr5.splice(1,1,100); // Replace
+
+
